@@ -34,7 +34,10 @@ export async function onRequest(context) {
     .replace(/name="twitter:title" content="[^"]*"/g, `name="twitter:title" content="${title}"`)
     .replace(/property="og:image" content="[^"]*"/g, `property="og:image" content="${ogImageUrl}"`)
     .replace(/name="twitter:image" content="[^"]*"/g, `name="twitter:image" content="${ogImageUrl}"`)
-    .replace(/https:\/\/diwali-campaign\.pages\.dev\/og\/[^\.]+\.jpg/g, ogImageUrl);
+    .replace(/https:\/\/diwali-campaign\.pages\.dev\/og\/[^\.]+\.jpg/g, ogImageUrl)
+    .replace(/"og:image","content":"https:\/\/diwali-prajwal\.pages\.dev\/og\.jpg"/g, `"og:image","content":"${ogImageUrl}"`)
+    .replace(/"twitter:image","content":"https:\/\/diwali-prajwal\.pages\.dev\/og\.jpg"/g, `"twitter:image","content":"${ogImageUrl}"`)
+    .replace(/Prajwal sent you a Diwali gift/g, title);
 
   return new Response(html, {
     headers: {
