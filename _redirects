@@ -1,2 +1,4 @@
-# Cloudflare Pages SPA Routing
+/static/*  /_next/static/:splat  200
+/w/static/*  /_next/static/:splat  200
+/w/*/static/*  /_next/static/:splat  200
 /*  /index.html  200
