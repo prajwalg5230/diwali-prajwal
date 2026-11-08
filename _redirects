@@ -1,6 +1,10 @@
-/w/U2Fuaml2  /w/UHJhandhbA  301
-/w/U2Fuaml2/ /w/UHJhandhbA  301
 /static/*  /_next/static/:splat  200
+/send/static/*  /_next/static/:splat  200
 /w/static/*  /_next/static/:splat  200
 /w/*/static/*  /_next/static/:splat  200
-/*  /index.html  200
+/w/U2Fuaml2  /w/UHJhandhbA  301
+/w/U2Fuaml2/ /w/UHJhandhbA  301
+/send  /send/index.html  200
+/send/ /send/index.html  200
+/w/*   /w/UHJhandhbA/index.html  200
+/*     /index.html  200
